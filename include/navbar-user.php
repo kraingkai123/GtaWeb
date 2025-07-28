@@ -1,6 +1,6 @@
   <nav id="navScroll" class="navbar navbar-dark bg-black fixed-top px-vw-5" tabindex="0">
       <div class="container">
-          <a class="navbar-brand pe-md-4 fs-4 col-12 col-md-auto text-center" href="index.html">
+          <a class="navbar-brand pe-md-4 fs-4 col-12 col-md-auto text-center" href="index.php">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-stack"
                   viewBox="0 0 16 16">
                   <path

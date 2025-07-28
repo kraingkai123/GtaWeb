@@ -1,7 +1,2 @@
-nbproject
-npm-debug.log
-node_modules
-.sass-cache
-Docker/
-./log_process
-./include/connnect.php
+
+.DS_Store

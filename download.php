@@ -44,6 +44,13 @@ include 'include/header-user.php';
                                 <a href="https://drive.google.com/file/d/11_Sau9229ncff9_WEumtQ-icjM8Sp0Lh/view?usp=sharing" class="btn btn-danger" role="button" target="_blank">Download</a>
                             </td>
                         </tr>
+<tr>
+                            <td>Program use voice in game<br>SAMPVOICE.zip</td>
+                            <td>
+                                <a href="https://drive.google.com/file/d/15uWUH7Q50XnWGvx6HNR7utb67YK8aucm/view?usp=sharing" class="btn btn-danger" role="button" target="_blank">Download</a>
+                            </td>
+                        </tr>
+
                     </tbody>
 
                     

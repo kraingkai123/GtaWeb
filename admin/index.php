@@ -1,9 +1,9 @@
 <?php
-include("./include/header.php");
+include("../include/header.php");
 ?>
 <body>
     <!-- Left Panel -->
-    <?php include("./include/sidebar.php"); ?>
+    <?php include("../include/sidebar.php"); ?>
     <!-- Left Panel -->
       <div class="breadcrumbs">
             <div class="col-sm-4">
@@ -23,5 +23,5 @@ include("./include/header.php");
                 </div>
             </div>
         </div>
-        <?php include("./include/footer.php"); ?>
+        <?php include("../include/footer.php"); ?>
 </body>

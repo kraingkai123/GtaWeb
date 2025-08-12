@@ -5,3 +5,4 @@ node_modules
 Docker/
 ./log_process
 ./include/connnect.php
+./attach/

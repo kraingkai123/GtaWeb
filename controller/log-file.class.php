@@ -8,7 +8,7 @@ class fileLog
     }
     public static function getDir()
     {
-        $dir = "../log_process/"; // โฟลเดอร์ที่ต้องการอ่าน
+        $dir = "log_process/"; // โฟลเดอร์ที่ต้องการอ่าน
         $files = scandir($dir);
 
         foreach ($files as $file) {

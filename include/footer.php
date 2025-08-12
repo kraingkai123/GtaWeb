@@ -1,10 +1,10 @@
-<script src="../vendors/jquery/dist/jquery.min.js"></script>
-<script src="../vendors/popper.js/dist/umd/popper.min.js"></script>
-<script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="../assets/js/main.js"></script>
-<script src="../vendors/jqvmap/dist/jquery.vmap.min.js"></script>
-<script src="../vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
-<script src="../vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+<script src="../admin/vendors/jquery/dist/jquery.min.js"></script>
+<script src="../admin/vendors/popper.js/dist/umd/popper.min.js"></script>
+<script src="../admin/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../admin/assets/js/main.js"></script>
+<script src="../admin/vendors/jqvmap/dist/jquery.vmap.min.js"></script>
+<script src="../admin/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+<script src="../admin/vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
 <!-- <link href="../vendors/select2/dist/css/select2.min.css" rel="stylesheet" />
 <script src="../vendors/select2/dist/js/select2.min.js"></script> -->
 
@@ -52,7 +52,7 @@
     }
 
     function showLoadingPage(showText = "") {
-        let text = showText || "กำลังโหลดข้อมูล";
+        let text = showText || "Loading...";
         Swal.fire({
             title: '',
             text: text,

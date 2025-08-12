@@ -1,9 +1,9 @@
 <?php
-include 'include/header-user.php';
+include './include/header-user.php';
 ?>
 
 <body class="bg-black text-white mt-0" data-bs-spy="scroll" data-bs-target="#navScroll">
-    <?php include 'include/navbar-user.php'; ?>
+    <?php include './include/navbar-user.php'; ?>
     <main>
         <div class="w-100 overflow-hidden position-relative bg-black text-white" data-aos="fade">
             <div class="position-absolute w-100 h-100 bg-black opacity-75 top-0 start-0"></div>
@@ -64,29 +64,31 @@ include 'include/header-user.php';
                 <div class="container bg-black px-vw-5 py-vh-3 rounded-5 shadow">
                     <div class="row">
                         <?php
-                         for ($i=0; $i <5 ; $i++) { 
-                            ?>
+                        $reeponse = news::listNews();
+                        foreach ($reeponse as $i => $value) {
+                        ?>
                             <div class="col-12 col-md-6">
-                            <div class="card bg-transparent mb-5" data-aos="zoom-in-up">
-                                <div class="bg-dark shadow rounded-5 p-0">
-                                    <img src="img/webp/abstract3.webp" width="582" height="327" alt="abstract image"
-                                        class="img-fluid rounded-5 no-bottom-radius" loading="lazy">
-                                    <div class="p-5">
-                                        <h2 class="fw-lighter">Ipsum dolor est</h2>
-                                        <p class="pb-4 text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-                                        <a href="#" class="link-fancy link-fancy-light">Read more<?php echo $i;?></a>
+                                <div class="card bg-transparent mb-5" data-aos="zoom-in-up">
+                                    <div class="bg-dark shadow rounded-5 p-0">
+                                        <img src="<?php echo "./admin/attach/fileuploads/".$value['news_image'];?>" width="582" height="327" alt="abstract image"
+                                            class="img-fluid-new rounded-5 no-bottom-radius" loading="lazy">
+                                       
+                                        <div class="p-5">
+                                            <p class="pb-4 text-secondary">
+                                               <b> <?php echo $value['news_title']; ?></b><br>
+                                            <?php echo $value['detail_news'];?></p>
+                                           <!--  <a href="#" class="link-fancy link-fancy-light">Read more<?php echo $i; ?></a> -->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                            <?php 
-                         }?>
+                        <?php
+                        } ?>
                     </div>
 
                 </div>
-              <!--   <div class="container-fluid px-vw-5 position-relative" data-aos="fade">
+                <!--   <div class="container-fluid px-vw-5 position-relative" data-aos="fade">
                     <div class="position-absolute w-100 h-50 bg-black top-0 start-0"></div>
                     <div class="position-relative py-vh-5 bg-cover bg-center rounded-5"
                         style="background-image: url(img/webp/abstract12.webp)">
@@ -129,7 +131,7 @@ include 'include/header-user.php';
                         </div>
 
                     </div>
-                </div>        -->   
+                </div>        -->
     </main>
     <?php include './include/footer-user.php'; ?>
 </body>

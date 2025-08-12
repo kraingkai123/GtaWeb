@@ -26,30 +26,18 @@ include 'include/header-user.php';
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Full Client <br>GTA.San.Andreas.rar</td>
-                            <td>
-                                <a href="https://drive.google.com/file/d/1FGHOR7M8gCvJ9998jkNDwpPJeu6Ja8bL/view?usp=sharing" class="btn btn-danger" role="button" target="_blank">Download</a>
-                            </td>
-                        </tr>
-                         <tr>
-                            <td>SA-MP <br>sa-mp-0.3.7-R5-2-MP-install.exe</td>
-                            <td>
-                                <a href="https://drive.google.com/file/d/1Y9QAgQQ1s_ikzEKBXytkQ2TEftxrFVcY/view?usp=sharing" class="btn btn-danger" role="button" target="_blank">Download</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>APK <br>GTA-RolePlay-Classic.apk</td>
-                            <td>
-                                <a href="https://drive.google.com/file/d/11_Sau9229ncff9_WEumtQ-icjM8Sp0Lh/view?usp=sharing" class="btn btn-danger" role="button" target="_blank">Download</a>
-                            </td>
-                        </tr>
-<tr>
-                            <td>Program use voice in game<br>SAMPVOICE.zip</td>
-                            <td>
-                                <a href="https://drive.google.com/file/d/15uWUH7Q50XnWGvx6HNR7utb67YK8aucm/view?usp=sharing" class="btn btn-danger" role="button" target="_blank">Download</a>
-                            </td>
-                        </tr>
+                        
+                        <?php
+                        $response = Download::listDownload();
+                        foreach ($response as $key => $value) {
+                        ?>
+                            <tr>
+                                <td><?php echo $value['download_name']; ?><br><?php echo $value['download_detail'];?></td>
+                                <td><a href="<?php echo $value['download_link']; ?>" class="btn btn-primary" target="_blank">Download</a></td>
+                            </tr>
+                        <?php
+                        }
+                        ?>
 
                     </tbody>
 

@@ -22,6 +22,9 @@
                      <li class="">
                         <a href="../admin/download.php"> <i class="menu-icon fa fa-dashboard"></i>Download</a>
                     </li>
+                    <li class="">
+                        <a href="../admin/banlist.php"> <i class="menu-icon fa fa-dashboard"></i>Ban List</a>
+                    </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </nav>

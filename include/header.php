@@ -30,6 +30,11 @@
 
 </head>
 
-<?php include("include.php");
+<?php 
+if(empty($_SESSION['user'])){
+    header("Location: ../login.php");
+    exit();
+}
+include("include.php");
 
 ?>

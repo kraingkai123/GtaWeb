@@ -29,9 +29,17 @@
               </li>
 
           </ul>
-          <a href="download.php" aria-label="Download this template"
+         <div class="row">
+            <div class="col-12 col -md-3">
+                 <a href="download.php" aria-label="Download this template"
               class="btn btn-outline-light">
               <small>Download</small>
           </a>
+           <a href="login.php" aria-label="Download this template"
+              class="btn btn-outline-light">
+              <small>Login</small>
+          </a>
+
+         </div>
       </div>
   </nav>

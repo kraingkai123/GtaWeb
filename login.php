@@ -9,7 +9,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sufee Admin - HTML5 Admin Template</title>
+    <title>GTA:Roleplay Classic</title>
     <meta name="description" content="Sufee Admin - HTML5 Admin Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -39,7 +39,9 @@
             <div class="login-content">
                 <div class="login-logo">
                     <a href="index.php">
-                        <img class="align-content" src="./admin/images/logo.png" alt="">
+                        <img class="align-content" src="./admin/images/logo.png" alt="" style="
+    width: 100px;
+">
                     </a>
                 </div>
                 <div class="login-form">

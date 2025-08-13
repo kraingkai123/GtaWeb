@@ -25,6 +25,9 @@
                     <li class="">
                         <a href="../admin/banlist.php"> <i class="menu-icon fa fa-dashboard"></i>Ban List</a>
                     </li>
+                     <li class="">
+                        <a href="../admin/player.php"> <i class="menu-icon fa fa-dashboard"></i>Player Accounts</a>
+                    </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </nav>

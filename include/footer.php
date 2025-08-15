@@ -36,7 +36,7 @@
             ],
 
             "language": {
-                "search": "ค้นหา:",
+                "search": "Search:",
                 "infoFiltered": "( คำที่ค้นหา จาก _MAX_ รายการ ทั้งหมด ) ",
 
             }

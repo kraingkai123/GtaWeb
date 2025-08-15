@@ -12,7 +12,7 @@ include("../include/header.php");
             <div class="col-sm-4">
                 <div class="page-header float-left">
                     <div class="page-title">
-                        <h1>Ban List</h1>
+                        <h1>Player Account</h1>
                     </div>
                 </div>
             </div>
@@ -57,6 +57,7 @@ include("../include/header.php");
                                     <td><?php echo $value['playerBanned'] =='0' ? "Active": "Banned"; ?></td>
 
                                     <td>
+                                        <a class="btn btn-primary" href="frm_charecter.php?charId=<?php echo $value['playerID'];?>" role="button">Edit Data</a>
                                         <button type="button" class="btn <?php echo  $value['playerBanned'] ==0 ? "btn-danger" : "btn-success" ;?>" onclick="updateStatus('update',<?php echo $value['playerID']; ?>,'<?php echo $value['playerBanned']; ?>')"><?php echo  $value['playerBanned'] ==0 ? "Banned" : "Active" ;?></button>
                                     </td>
                                 </tr>
@@ -93,7 +94,7 @@ include("../include/header.php");
             showCancelButton: true,
             confirmButtonColor: "#3085d6",
             cancelButtonColor: "#d33",
-            confirmButtonText: "yes, delete it!",
+            confirmButtonText: "yes, Update!",
             cancelButtonText: "cancel"
         }).then((result) => {
             if (result.isConfirmed) {

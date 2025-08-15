@@ -18,7 +18,7 @@ class Character
         } else {
             $status = '1';
         }
-      
+
         $fields = array(
             'playerBanned' => $status
         );
@@ -33,5 +33,25 @@ class Character
         $query = "SELECT * FROM playeraccounts WHERE playerID = '$playerId'";
         $response = db::db_query($query);
         return $response ? $response[0] : null;
+    }
+    public static function updateCharacterData($charId, $data)
+    {
+        $fields = array(
+            'playerName' => $data['playerName'],
+        );
+        for ($i = 0; $i <= 12; $i++) {
+            if (isset($data['playerWeapon' . $i])) {
+                $fields['playerWeapon' . $i] = $data['playerWeapon' . $i];
+            }
+        }
+         for ($i = 0; $i <= 12; $i++) {
+            if (isset($data['playerAmmo' . $i])) {
+                $fields['playerAmmo' . $i] = $data['playerAmmo' . $i];
+            }
+        }
+        $cond = array(
+            'playerID' => $charId
+        );
+        return db::db_update("playeraccounts", $fields, $cond);
     }
 }

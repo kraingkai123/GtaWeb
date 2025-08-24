@@ -38,6 +38,8 @@ class Character
     {
         $fields = array(
             'playerName' => $data['playerName'],
+            'playerAdminLevel' => $data['playerAdminLevel'],
+            'playerPoints' => $data['playerPoints'],
         );
         for ($i = 0; $i <= 12; $i++) {
             if (isset($data['playerWeapon' . $i])) {

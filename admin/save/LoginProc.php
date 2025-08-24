@@ -18,7 +18,7 @@ if (count($response) > 0) {
         'playerAdminLevel' => $user['playerAdminLevel'],
     );
     if ($user['playerAdminLevel'] == 0) {
-        $url = "member.php";
+        $url = "member/member.php";
     } else {
         $url = "admin/index.php";
     }

@@ -45,6 +45,24 @@ if (!empty($_GET['charId'])) {
                             </div>
 
                         </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="playerName">Player Admin Level</label>
+                                    <input type="text" class="form-control" id="playerAdminLevel" name="playerAdminLevel" value="<?php echo isset($response['playerAdminLevel']) ? $response['playerAdminLevel'] : ''; ?>" aria-required="true" alert="Please enter player admin level">
+                                </div>
+                            </div>
+
+                        </div>
+                         <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="playerName">Player poionts</label>
+                                    <input type="text" class="form-control" id="playerPoints" name="playerPoints" value="<?php echo isset($response['playerPoints']) ? $response['playerPoints'] : ''; ?>" aria-required="true" alert="Please enter player poionts">
+                                </div>
+                            </div>
+
+                        </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">

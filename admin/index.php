@@ -1,11 +1,15 @@
 <?php
 include("../include/header.php");
 ?>
+
 <body>
     <!-- Left Panel -->
     <?php include("../include/sidebar.php"); ?>
     <!-- Left Panel -->
-      <div class="breadcrumbs">
+    <div id="right-panel" class="right-panel">
+        <?php include("../include/navbar.php"); ?>
+        <!-- Header-->
+        <div class="breadcrumbs">
             <div class="col-sm-4">
                 <div class="page-header float-left">
                     <div class="page-title">
@@ -23,5 +27,6 @@ include("../include/header.php");
                 </div>
             </div>
         </div>
-        <?php include("../include/footer.php"); ?>
+    </div>
+    <?php include("../include/footer.php"); ?>
 </body>

@@ -4,7 +4,7 @@ include("../include/header.php");
 
 <body>
     <!-- Left Panel -->
-    <?php include("../include/sidebar.php"); ?>
+    <?php include("../include/sidebar-user.php"); ?>
     <!-- Left Panel -->
     <div id="right-panel" class="right-panel">
         <?php include("../include/navbar.php"); ?>
